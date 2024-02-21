@@ -1,0 +1,85 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "young";
+  src: url(./assets/fonts/young-serif/YoungSerif-Regular.ttf) format("truetype");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "outfit";
+  src: url(./assets/fonts/outfit/Outfit-VariableFont_wght.ttf)
+    format("truetype");
+  font-weight: 400;
+}
+
+body {
+  background-color: hsl(30, 54%, 90%);
+  padding: 5px;
+  font-size: 1em;
+  margin: auto;
+  min-width: 300px;
+  max-width: 1000px;
+}
+
+div {
+  background-color: rgb(249, 245, 245);
+  border: auto;
+  margin: auto;
+  padding: 2%;
+  width: 45% ;
+  font-family: "outfit";
+  border-radius: 1cap;
+}
+
+img {
+  width: 99%;
+  height: 19%;
+  border: 8px;
+  border-radius: 1cap;
+  margin: auto;
+}
+
+h2 {
+  color: hsl(332, 51%, 32%);
+}
+h3 {
+  color: hsl(14, 45%, 36%);
+  font-size: 30px;
+  font-family: "young";
+}
+.preparation {
+  background-color: hsla(332, 90%, 80%, 0.18);
+  margin: auto;
+  width: auto;
+  letter-spacing: 1px;
+  line-height: 30px;
+}
+
+h1 {
+  font-family: "young";
+}
+
+.ingredientes {
+  line-height: 39px;
+  letter-spacing: 1px;
+  width: auto;
+}
+
+.instrucoes {
+  line-height: 39px;
+  letter-spacing: 1px;
+  width: auto;
+  font-family: "young";
+}
+
+.nutricao {
+  line-height: 40px;
+  letter-spacing: 1px;
+  width: auto;
+}
+p {
+  font-family: "outfit";
+}
+li {
+  color: hsl(14, 45%, 36%);
+}

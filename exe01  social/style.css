@@ -1,0 +1,49 @@
+@charset "UTF-8";
+
+*{
+  padding: 0px;
+}
+
+
+body{background-color: rgba(74, 251, 192, 0.191);
+  min-width: 300px;
+  max-width: 1000px; 
+}
+
+div{
+  font-family: 'Courier New', Courier, monospace;
+font-size: large;
+
+}
+
+h1{
+  color:rgb(31, 125, 125)
+}
+
+a:link{
+  background-color: transparent;
+  text-decoration: none;
+  color: green;
+}
+a:visited{
+  color: rgb(10, 43, 192);
+  background-color: transparent;
+  text-decoration: none;
+}
+a:hover{
+  color: red;
+  background-color: transparent
+  ;
+  text-decoration: underline
+  ;
+}
+a:active{
+  color: green;
+  background-color: transparent;
+  text-align: underline;
+}
+
+ul{
+  list-style-type: square;
+  
+}

@@ -1,0 +1,113 @@
+@charset "UTF-8";
+
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Protest+Strike&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Twinkle+Star&display=swap");
+
+@font-face {
+  font-family: "Moderno";
+  src: url(../Moderno\ pero\ Español.ttf) format("truetype");
+}
+
+:root {
+  --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+  --fonte2: "Greve de Protesto", sans-serif;
+  --fonte3: "Twinkle Star", cursiva;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+ body {
+  background-color: darkgray;
+  min-height: 100vh;
+  font-family: var(--fonte1);
+  min-width: 660px;
+  max-width: none; 
+}
+
+header {
+  background-color: rgb(26, 81, 1);
+  color: white;
+  text-align: center;
+  }
+
+header h1 {
+  padding-top: 50px;
+  font-variant: small-caps;
+  font-family: var(--fonte2);
+  font-size: 10vh;
+  color: rgba(247, 247, 109, 0.995);
+  letter-spacing: 2px;
+}
+
+header p {
+  padding-bottom: 50px;
+  font-size: large;
+}
+
+header a,
+footer a {
+  color: white;
+  text-decoration: none;
+  font-weight: bolder;
+}
+
+header a,
+footer a:hover {
+  text-decoration: underline;
+}
+
+section {
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+  line-height: 2em;
+  padding-left: 30px;
+  font-family: var(--fonte3);
+  font-size: 4vh;
+}
+
+section p {
+  padding-bottom: 2em;
+}
+
+section.normal {
+  background-color: white;
+  color: black;
+}
+
+section.imagem {
+  background-color: rgba(37, 30, 30, 0.265);
+  color: white;
+}
+
+section.imagem p {
+  width: 359px;
+  background-color: rgba(43, 43, 43, 0.466);
+  display: inline-block;
+  padding: 5px;
+}
+
+section#img01 {
+  background-image: url(../imagens/background001.jpg);
+  background-position: top;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+section#img02 {
+  background-image: url(../imagens/background002.jpg);
+  background-position: left;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+footer {
+  background-color: rgb(26, 81, 1);
+  color: rgba(247, 247, 109, 0.995);
+  text-align: center;
+  padding: 10px;
+  font-size: 1.2em;
+}
