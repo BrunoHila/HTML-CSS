@@ -14,7 +14,7 @@
     </style>
   </head>
   <body>
-    <form action="cadastro.php" method="post" autocomplete="off">
+    <form action="cadastro.php" method="post" autocomplete="on">
       <h1>FORMULARIO</h1>
        <p>
         <label for="inome">Nome:</label>
@@ -22,7 +22,7 @@
       </p>
       <p>
         <label for="isobrenome">Sobrenome:</label>
-        <input type="text" name="sobrenome" id="isobrenome" required autocomplete="nickname"/>
+        <input type="text" name="sobrenome" id="isobrenome" required autocomplete="cc-name"/>
       </p>
       <p>
         <label for="imedeia">Media:</label>
@@ -40,6 +40,37 @@
           placeholder="minimo 10 caracterias"
           autocomplete="current-password"/>
       </p>
+
+      <p><input type="color" name="cor" id="icor"><label for="icor">cor</label> </p><br>
+
+      <p>
+        <label for="iimgm">imagem</label>
+        <input type="file" name="image" id="iimgm">
+      </p> <br>
+
+      
+        <p>
+          <input type="range" name="nivel" id="inivel"> <label for="inivel">
+            nivel
+          </label>
+        </p>
+
+        <p>
+          <label for="iesta">Estado</label>
+          <select name="estado" id="iesta">
+            <option value="minas">Minas Gerais</option>
+            <option value="rio">Rio De Janeiro</option>
+            <option value="maceio">Maceio</option>
+            <option value="campinas">Campinas</option>
+            <option value="saopaulo">São Paulo</option>
+          </select>
+        </p>
+      
+        <p>
+        <label for="imen">Mensagem</label>
+        <textarea name="mensagem" id="imen" cols="30" rows="10"></textarea>  
+        
+        </p>
       
       </fieldset>
       <p><input type="submit" value="Enviar" /> <input type="reset" value="Limpar" /></p>
@@ -47,11 +78,12 @@
         <legend> Sexo</legend>
         <input type="radio" name="sexo" id="imas" value="M"> <label for="imas">Masculino</label> <br>
         <input type="radio" name="sexo" id="ifem" value="F" checked> <label for="ifem">Feminino</label>
-      </fieldset>
+      </fieldset> <br>
       
        <fieldset>
        
         <legend>Esportes</legend>
+
        <input type="checkbox" name="bas" id="ibas"> <label for="ibas"> Basquete</label> <br>
        
        <input type="checkbox" name="fut" id="ifut" checked><label for="ifut"> Futebol</label> <br>
