@@ -11,7 +11,7 @@ body {
 }
 
 header {
-  background-color: rgb(228, 6, 6);
+  background-color: rgb(246, 8, 8);
   color: white;
 }
 
@@ -25,7 +25,7 @@ span#icone{
   background-color: rgb(42, 41, 40);
   display: block;
   text-align: center;
-  padding: 10px;
+  padding: 15px;
   cursor: pointer;
 }
 
@@ -33,28 +33,33 @@ span#icone:hover{
 background-color: rgb(42, 41, 41);
 color: rgb(251, 251, 251);
 
+
 }
 
 menu {
   display: none;
 }
 
-menu ul {
+menu ul li {
   list-style-type: none;
+  
 }
 
 menu ul li a {
   display: block;
-  padding: 10px;
+  padding: 15px;
+  margin-block: 12px;
   text-decoration: none;
   text-align: center;
-  background-color: rgba(30, 30, 30, 0.982);
-  color: white;
-  border-top: 2px solid white;
+  background-color: rgba(109, 21, 21, 0.982);
+  color: rgb(249, 244, 244);
+  border-top: 0px solid rgb(244, 8, 8);
+
 }
 
 menu ul li :hover {
-  background-color: rgba(250, 10, 10, 0.866);
+  background-color: rgba(251, 5, 5, 0.921);
+  
 }
 
 main {

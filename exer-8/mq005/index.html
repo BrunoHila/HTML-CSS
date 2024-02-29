@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="eslilos/media-query.css" />
     <link rel="stylesheet" href="estilos/style.css" />
     <title>Media Query</title>
     <link
@@ -10,23 +11,25 @@
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
     />
   </head>
-  <body>
+  <body onresize="mudouTamanho()">
     <header>
       <h1>⚽Esportes Populares🏀</h1>
       <span id="icone" class="material-symbols-outlined" onclick="clickMenu()">
         menu
+        <menu id="item">
+          <ul>
+            <li><a href="#">Basquete 🏀</a></li>
+            <li><a href="#">Futebol ⚽</a></li>
+            <li><a href="#">UFC 🥊</a></li>
+            <li><a href="#">Tenis 🎾</a></li>
+            <li><a href="#">Volei 🏐</a></li>
+            <li><a href="#">Futebol Americano 🏈</a></li>
+        
+          </ul>
+        </menu>  
       </span>
-      <menu id="item">
-        <ul>
-          <li><a href="#">Basquete</a></li>
-          <li><a href="#">Futebol</a></li>
-          <li><a href="#">UFC</a></li>
-          <li><a href="#">Tenis</a></li>
-          <li><a href="#">Volei</a></li>
-          <li><a href="#">Futebol Americano</a></li>
-        </ul>
-      </menu>
     </header>
+    
     <main>
       <article>
         <h2>Historia do Basquete</h2>
@@ -166,14 +169,23 @@
         </p>
       </article>
     </main>
+
     <script>
-            function clickMenu() {
-        if (item.style.display == 'block') {
-        item.style.display = 'none'
-        } else {
+      function mudouTamanho() {
+        if (window.innerWidth >= 769) {
           item.style.display = 'block'
+        } else {
+          item.style.display = 'none'
         }
-            }
+      }
+
+      function clickMenu() {
+        if (item.style.display == "block") {
+          item.style.display = "none";
+        } else {
+          item.style.display = "block";
+        }
+      }
     </script>
   </body>
 </html>
