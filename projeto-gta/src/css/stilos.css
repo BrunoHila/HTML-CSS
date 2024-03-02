@@ -175,7 +175,7 @@ body {
   justify-content: center;
 }
 
-.compre-ja .btn-plataforma .plataforma {
+.compre-ja .btn-plataforma .plataformas {
   margin-top: 10px;
   display: flex;
   flex-direction: column;
@@ -189,6 +189,10 @@ body {
   display: flex;
   opacity: 1;
 }
+
+.compre-ja .btn-plataforma .plataformas li {
+      padding: 20px;
+    }
 
 .compre-ja .btn-plataforma .plataformas li:nth-child(1) {
   border: 1px solid #00439c;
